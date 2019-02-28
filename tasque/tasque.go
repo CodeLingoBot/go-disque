@@ -60,7 +60,7 @@ func (t *Task) SetRetry(d time.Duration) *Task {
 	return t
 }
 
-// Execute the task on the client
+// Do executes the task on the client
 func (t *Task) Do(c *Client) error {
 	return c.Do(t)
 }
